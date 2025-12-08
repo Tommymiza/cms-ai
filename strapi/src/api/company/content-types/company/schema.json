@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "Company",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "zipcode": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "required": true,
+      "type": "integer"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "company_id"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

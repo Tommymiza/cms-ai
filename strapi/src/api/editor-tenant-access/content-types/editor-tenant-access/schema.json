@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editor_tenant_accesses",
+  "info": {
+    "singularName": "editor-tenant-access",
+    "pluralName": "editor-tenant-accesses",
+    "displayName": "editor_tenant_access"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tenant_membership": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tenant-membership.tenant-membership"
+    },
+    "website": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site"
+    }
+  }
+}

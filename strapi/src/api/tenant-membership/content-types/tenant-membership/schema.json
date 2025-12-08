@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tenant_memberships",
+  "info": {
+    "singularName": "tenant-membership",
+    "pluralName": "tenant-memberships",
+    "displayName": "Tenant_membership",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "tenant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tenant.tenant"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "owner",
+        "admin",
+        "editor"
+      ]
+    },
+    "is_registred": {
+      "type": "boolean"
+    }
+  }
+}

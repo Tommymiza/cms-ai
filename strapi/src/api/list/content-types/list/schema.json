@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lists",
+  "info": {
+    "singularName": "list",
+    "pluralName": "lists",
+    "displayName": "list",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "list_key": {
+      "type": "string"
+    },
+    "website": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "lists"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::list-item.list-item",
+      "mappedBy": "type"
+    },
+    "schemas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::list-schema.list-schema",
+      "mappedBy": "type"
+    }
+  }
+}

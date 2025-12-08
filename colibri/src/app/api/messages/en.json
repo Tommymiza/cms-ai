@@ -1,0 +1,87 @@
+{
+    "bot": {
+        "initial-message": "Hello, do you want to modify your website? I can also suggest options to add to this page, if you wish.",
+        "vocal-instruction": "Hold CTRL + SPACE to speak",
+        "vocal-statut": {
+            "record": "Recording",
+            "start": "🛑 Listening...",
+            "stop": "⚪ Inactive"
+        },
+        "input-placeholder": "Type your message...",
+        "voice": {
+            "first": "If you want to speak, you can hold down the Control + Space keys"
+        }
+    },
+    "newsletter": {
+        "subscribe": "Subscribe to our newsletter",
+        "description": "Sign up to receive the latest news, articles, resources, and design inspiration.",
+        "emailPlaceholder": "Email address"
+    },
+    "contact": {
+        "button": "Your message",
+        "office": "Our office",
+        "follow": "Follow us",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "entreprise": "Company",
+            "phone": "Phone",
+            "submit": "Send",
+            "success": "Your message has been sent successfully !",
+            "error": "An error occurred while sending your message. Please try again."
+        }
+    },
+    "cookies": {
+        "title": "Cookie Management",
+        "consentement": "Consent Management",
+        "description": "These cookies allow us to analyze navigation on our site, establish statistics, and volumes of traffic and usage of the various elements making up our site.",
+        "accept": "I accept audience measurement and user experience cookies",
+        "lead": "We use cookies 🍪",
+        "explication": "These cookies allow us to analyze navigation on our site, establish statistics, and volumes of traffic and usage of the various elements making up our site."
+    },
+    "setting": {
+        "title": "Page configuration",
+        "information": {
+            "title": "General information",
+            "nom": "Name",
+            "alias": "Alias",
+            "type": "Page type",
+            "published": "Published",
+            "niveau": "Level",
+            "has_children":"Has children",
+            "path":"AliasPath"
+        },
+        "seo":{
+            "title": "SEO and metadata",
+            "pageTitle":"Page title",
+            "keywords":"Keywords",
+            "description":"Page description"
+        },
+        "structure": {
+            "title": "Structure and navigation",
+            "showMenu": "Show in menu",
+            "order": "Order"
+        },
+        "media": {
+            "title": "Media and summary",
+            "image": "Image",
+            "summary": "Summary"
+        },
+        "history": {
+            "title": "Histories",
+            "lastUpdate": "Last update",
+            "createdAt": "Created on",
+            "updatedAt": "Updated on"
+        },
+        "saveBtn": "Save"
+    },
+    "page_config": {
+        "new": "New page",
+        "delete": "Delete page",
+        "newTitle": "Add a new page",
+        "nom": "Page name",
+        "type": "Page type",
+        "newBtn": "Create"
+    }
+}

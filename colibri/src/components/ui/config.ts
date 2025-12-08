@@ -1,0 +1,48 @@
+const config = {
+  border: {
+    style: "solid",
+    width: "1px",
+  },
+  colors: {
+    ring: "#C63C3C",
+    text: "#111827",
+    muted: "#6B7280",
+    accent: "#6CB648",
+    border: "#E5E7EB",
+    danger: "#EF4444",
+    primary: "#C63C3C",
+    success: "#10B981",
+    surface: "#F9FAFB",
+    warning: "#F59E0B",
+    secondary: "#111111",
+    background: "#FFFFFF",
+    "accent-contrast": "#FFFFFF",
+    "primary-contrast": "#FFFFFF",
+  },
+  radius: {
+    lg: "0.5rem",
+    md: "0.375rem",
+    sm: "0.25rem",
+    full: "9999px",
+    default: "0.375rem",
+  },
+  shadow: {
+    lg: "0 10px 15px -3px rgba(0,0,0,0.1)",
+    md: "0 4px 6px -1px rgba(0,0,0,0.1)",
+    sm: "0 1px 2px 0 rgba(0,0,0,0.05)",
+    none: "none",
+    default: "0 4px 6px -1px rgba(0,0,0,0.1)",
+  },
+  spacing: {
+    "btn-x": "1rem",
+    "btn-y": "0.5rem",
+    "block-gap": "10px",
+    "section-x": "20px",
+    "section-y": "20px",
+  },
+  typography: {
+    "font-size": "1rem",
+    "font-family": "'Inter', sans-serif",
+    "font-weight-heading": "700",
+  },
+};

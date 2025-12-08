@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blocks",
+  "info": {
+    "singularName": "block",
+    "pluralName": "blocks",
+    "displayName": "block",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "json"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::block.block",
+      "inversedBy": "children"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::block.block",
+      "mappedBy": "parent"
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-content.page-content",
+      "inversedBy": "blocks"
+    }
+  }
+}

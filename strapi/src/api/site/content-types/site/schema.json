@@ -1,0 +1,119 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "singularName": "site",
+    "pluralName": "sites",
+    "displayName": "website",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "display_name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "default_visitor_culture": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::culture.culture"
+    },
+    "main_domain_name": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "users_websites": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "websites"
+    },
+    "tweeksy_domain_name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "tweeksy_preview_domain_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "logo": {
+      "type": "text"
+    },
+    "slogan": {
+      "type": "text",
+      "required": true
+    },
+    "fiche_entreprise": {
+      "type": "json"
+    },
+    "is_news_letter": {
+      "type": "boolean",
+      "default": true
+    },
+    "social_media": {
+      "type": "json"
+    },
+    "bureaux": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bureau.bureau",
+      "mappedBy": "website"
+    },
+    "histories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::history.history",
+      "mappedBy": "website"
+    },
+    "header": {
+      "type": "json",
+      "required": true
+    },
+    "footer": {
+      "type": "json",
+      "required": true
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page",
+      "mappedBy": "website"
+    },
+    "components": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::component.component",
+      "mappedBy": "website"
+    },
+    "style": {
+      "type": "text"
+    },
+    "script": {
+      "type": "text"
+    },
+    "tenant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tenant.tenant"
+    },
+    "lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::list.list",
+      "mappedBy": "website"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plan_features",
+  "info": {
+    "singularName": "plan-feature",
+    "pluralName": "plan-features",
+    "displayName": "plan_feature",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::plan.plan"
+    },
+    "feature_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::feature.feature"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "value": {
+      "type": "json"
+    }
+  }
+}

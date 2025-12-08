@@ -1,0 +1,47 @@
+{
+  "name": "my-project",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.0.0",
+    "@strapi/plugin-users-permissions": "5.0.0",
+    "@strapi/provider-email-nodemailer": "^5.0.0",
+    "@strapi/provider-email-sendgrid": "^5.10.4",
+    "@strapi/provider-upload-cloudinary": "^5.4.0",
+    "@strapi/strapi": "5.0.0",
+    "axios": "^1.9.0",
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "9.4.3",
+    "handlebars": "^4.7.8",
+    "jsonwebtoken": "^9.0.2",
+    "passport-local": "^1.0.0",
+    "pg": "^8.13.0",
+    "pg-connection-string": "^2.7.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "strapi-plugin-meilisearch": "^0.13.3",
+    "styled-components": "^6.0.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x"
+  },
+  "strapi": {
+    "uuid": "78c19548-428e-4103-a8a1-8fb4557445d2"
+  }
+}

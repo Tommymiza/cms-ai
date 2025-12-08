@@ -1,0 +1,202 @@
+/* Base prose */
+.prose {
+  color: #374151;
+  max-width: 65ch;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.prose h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #111827;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #111827;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #111827;
+}
+
+.prose h4 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+  color: #111827;
+}
+
+.prose p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.prose a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.prose ul,
+.prose ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose li {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.prose blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1em;
+  color: #6b7280;
+  font-style: italic;
+  margin: 1em 0;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2em 0;
+}
+
+.prose img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5rem;
+}
+
+.prose code {
+  background-color: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.prose pre {
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1em;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  margin: 1em 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.prose table th,
+.prose table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.prose table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+/* =========================
+   Dark Mode (prose-invert)
+   ========================= */
+.prose.prose-invert {
+  color: #d1d5db;
+}
+
+.prose.prose-invert h1,
+.prose.prose-invert h2,
+.prose.prose-invert h3,
+.prose.prose-invert h4 {
+  color: #fff;
+}
+
+.prose.prose-invert strong {
+  color: #fff;
+}
+
+.prose.prose-invert a {
+  color: #93c5fd;
+}
+
+.prose.prose-invert blockquote {
+  border-left-color: #4b5563;
+  color: #9ca3af;
+}
+
+.prose.prose-invert code {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+.prose.prose-invert pre {
+  background-color: #111827;
+}
+
+/* =========================
+   Size Variants
+   ========================= */
+.prose-sm {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.prose-sm h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.prose-sm h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.prose-lg {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.prose-lg h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.prose-lg h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}

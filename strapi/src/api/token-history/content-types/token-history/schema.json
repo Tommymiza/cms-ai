@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "token_histories",
+  "info": {
+    "singularName": "token-history",
+    "pluralName": "token-histories",
+    "displayName": "token_history",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "token_amount": {
+      "type": "decimal"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "provider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::model-provider.model-provider"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "refund",
+        "reset",
+        "input_token",
+        "output_token",
+        "image_generation"
+      ]
+    },
+    "tweeksy_amount": {
+      "type": "decimal"
+    },
+    "model": {
+      "type": "string",
+      "required": false
+    },
+    "user_balance": {
+      "type": "decimal"
+    },
+    "from_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "tenant": {
+      "type": "integer"
+    }
+  }
+}

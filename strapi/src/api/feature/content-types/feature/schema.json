@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "features",
+  "info": {
+    "singularName": "feature",
+    "pluralName": "features",
+    "displayName": "feature",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "feature",
+        "limit"
+      ],
+      "default": "feature",
+      "required": true
+    }
+  }
+}

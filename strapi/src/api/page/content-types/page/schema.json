@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "website": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "pages"
+    },
+    "path": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "show_menu": {
+      "type": "boolean"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "children"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page",
+      "mappedBy": "parent"
+    },
+    "style": {
+      "type": "text"
+    },
+    "script": {
+      "type": "text"
+    },
+    "page_content": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-content.page-content",
+      "inversedBy": "pages"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

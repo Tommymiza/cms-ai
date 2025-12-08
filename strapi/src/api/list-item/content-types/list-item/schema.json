@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_items",
+  "info": {
+    "singularName": "list-item",
+    "pluralName": "list-items",
+    "displayName": "list_item"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::list.list",
+      "inversedBy": "items"
+    },
+    "data": {
+      "type": "json"
+    }
+  }
+}

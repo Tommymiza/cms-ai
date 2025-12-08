@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_contents",
+  "info": {
+    "singularName": "page-content",
+    "pluralName": "page-contents",
+    "displayName": "Page_content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page",
+      "mappedBy": "page_content"
+    },
+    "blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::block.block",
+      "mappedBy": "page"
+    }
+  }
+}

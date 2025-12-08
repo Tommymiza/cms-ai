@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "components",
+  "info": {
+    "singularName": "component",
+    "pluralName": "components",
+    "displayName": "component",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "block": {
+      "type": "json",
+      "required": true
+    },
+    "website": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "components"
+    }
+  }
+}

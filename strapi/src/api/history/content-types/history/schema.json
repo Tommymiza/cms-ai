@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "singularName": "history",
+    "pluralName": "histories",
+    "displayName": "history",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "json",
+      "required": true
+    },
+    "website": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "histories"
+    }
+  }
+}

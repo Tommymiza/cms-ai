@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_schemas",
+  "info": {
+    "singularName": "list-schema",
+    "pluralName": "list-schemas",
+    "displayName": "list_schema",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::list.list",
+      "inversedBy": "schemas"
+    },
+    "schema": {
+      "type": "json"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version": {
+      "type": "decimal"
+    }
+  }
+}

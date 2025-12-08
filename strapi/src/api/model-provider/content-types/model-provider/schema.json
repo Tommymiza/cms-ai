@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "model_providers",
+  "info": {
+    "singularName": "model-provider",
+    "pluralName": "model-providers",
+    "displayName": "Model_provider",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "image",
+        "tts"
+      ]
+    },
+    "ratio_tweeksy": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bureaus",
+  "info": {
+    "singularName": "bureau",
+    "pluralName": "bureaus",
+    "displayName": "Bureau",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "website": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "bureaux"
+    },
+    "ville": {
+      "type": "json"
+    },
+    "adresse": {
+      "type": "json"
+    },
+    "coordonnee": {
+      "type": "json"
+    }
+  }
+}

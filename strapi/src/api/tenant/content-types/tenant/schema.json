@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tenants",
+  "info": {
+    "singularName": "tenant",
+    "pluralName": "tenants",
+    "displayName": "tenant"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

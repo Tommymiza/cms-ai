@@ -1,0 +1,87 @@
+{
+    "bot": {
+        "initial-message": "Bonjour, voulez-vous modifier votre site web ? Je peux également vous suggérer des options a rajouter sur cette page, si vous le souhaitez.",
+        "vocal-instruction": "Maintenir les touches CTRL + ESPACE pour parler",
+        "vocal-statut": {
+            "record": "Enregistrement",
+            "start": "🛑 Écoute en cours...",
+            "stop": "⚪ Inactif"
+        },
+        "input-placeholder": "Écrivez votre message...",
+        "voice": {
+        "first": "Si vous voulez parler, vous pouvez maintenir sur les touches Control + Espace"
+        }
+    },
+    "newsletter": {
+        "subscribe": "Inscrivez-vous à notre newsletter",
+        "description": "Abonnez-vous pour recevoir les dernières nouvelles, articles, ressources et inspirations en matière de design.",
+        "emailPlaceholder": "Adresse email"
+    },
+    "contact": {
+        "button": "Votre message",
+        "office": "Notre bureau",
+        "follow": "Suivez-nous",
+        "form": {
+            "name": "Nom",
+            "email": "Email",
+            "message": "Message",
+            "entreprise": "Entreprise",
+            "phone": "Téléphone",
+            "submit": "Envoyer",
+            "success": "Votre message a été envoyé avec succès !",
+            "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+        }
+    },
+    "cookies":{
+        "title": "Gestion des cookies",
+        "consentement": "Gestion de consentement",
+        "description": "Ces cookies permettent d'analyser la navigation sur notre site, d'établir des statistiques, des volumes de fréquentation et d'utilisation des divers éléments composant notre site.",
+        "accept": "J'accepte les cookies de mesure d'audience et d'expérience utilisateur",
+        "lead": "Nous utilisons des cookies 🍪",
+        "explication": "Ces cookies permettent d'analyser la navigation sur notre site, d'établir des statistiques, des volumes de fréquentation et d'utilisation des divers éléments composant notre site."
+    },
+    "setting": {
+        "title": "Configuration de la page",
+        "information": {
+            "title": "Informations générales",
+            "nom": "Nom",
+            "alias": "Alias",
+            "type": "Type de page",
+            "published": "Publié",
+            "niveau": "Niveau",
+            "has_children":"A des sous pages",
+            "path":"AliasPath"
+        },
+        "seo":{
+            "title": "SEO et métadonnées",
+            "pageTitle":"Titre de la page",
+            "keywords":"Mots clés",
+            "description":"Description de la page"
+        },
+        "structure": {
+            "title": "Structure et navigation",
+            "showMenu": "Afficher dans le menu",
+            "order": "Ordre"
+        },
+        "media": {
+            "title": "Média et résumé",
+            "image": "Image",
+            "summary": "Résumé"
+        },
+        "history": {
+            "title": "Historiques",
+            "lastUpdate": "Dernière mise à jour",
+            "createdAt": "Créé le",
+            "updatedAt": "Mis à jour le"
+        },
+        "saveBtn": "Enregistrer"
+    },
+    "page_config": {
+        "new": "Nouvelle page",
+        "delete": "Supprimer la page",
+        "newTitle": "Ajouter une nouvelle page",
+        "nom": "Nom de la page",
+        "type": "Type de page",
+        "newBtn": "Créer"
+    }
+}
